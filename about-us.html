@@ -40,11 +40,24 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="about-us.html" data-translate ="about-link">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
+         <!-- إضافة زر الترجمة للشاشات الكبيرة -->
+          <li class="desktop-language-switcher">
+            <a href="#" id="languageToggle" class="language-toggle">
+              <span class="language-text">العربية</span>
+            </a>
+          </li>
         </ul>
+        <!-- إضافة زر الترجمة للشاشات الصغيرة -->
+        <div class="mobile-language-switcher d-xl-none">
+          <a href="#" id="mobileLanguageToggle" class="language-toggle">
+            <i class="bi bi-translate"></i>
+            <span class="language-text">العربية</span>
+          </a>
+        </div>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -66,234 +79,719 @@
       </div>
     </div><!-- End Page Title -->
     
-    <!-- About Section -->
-    <section id="about" class="about section">
+   <!-- About Section -->
+<section id="about" class="about section lang-section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row align-items-center">
-          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
-            <div class="about-image">
-              <img src="img/about/about-square-12.webp" alt="About Our Consulting Firm" class="img-fluid main-image">
-              <div class="experience-badge">
-                <span class="years">7+</span>
-                <span class="text">Years of Experience</span>
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
+        <div class="about-image">
+          <img src="img/about/about-square-12.webp" alt="MEP Engineering Team" class="img-fluid main-image">
+          <div class="experience-badge">
+            <span class="years">7+</span>
+            <span class="text" data-translate="experience-text">Years of Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="about-content">
+          <h2 data-translate="about-title">Leaders in Mechanical, Electrical & Plumbing Solutions</h2>
+          <p class="lead" data-translate="about-lead">At Golden Path, we provide integrated MEP solutions covering the entire project lifecycle from design and engineering to installation, implementation and maintenance.</p>
+          <p data-translate="about-description">We ensure effective, reliable and sustainable systems that meet our clients' needs and support their project continuity, while adhering to the highest standards of quality and safety.</p>
+
+          <div class="row features-row">
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="icon">
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+                <h4 data-translate="feature1-title">Design & Engineering</h4>
+                <p data-translate="feature1-desc">Integrated design of mechanical, electrical and plumbing systems with latest modeling technologies.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="icon">
+                  <i class="bi bi-tools"></i>
+                </div>
+                <h4 data-translate="feature2-title">Installation & Implementation</h4>
+                <p data-translate="feature2-desc">Professional execution of all MEP systems with technical supervision and field support.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="icon">
+                  <i class="bi bi-file-earmark-richtext"></i>
+                </div>
+                <h4 data-translate="feature3-title">CAD & BIM Services</h4>
+                <p data-translate="feature3-desc">Detailed drawings, 3D modeling, technical documentation and clash detection.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="icon">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <h4 data-translate="feature4-title">Analysis & Simulation</h4>
+                <p data-translate="feature4-desc">Performance analysis, energy efficiency, hydraulic flow simulation, and electrical load calculations.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="icon">
+                  <i class="bi bi-wrench"></i>
+                </div>
+                <h4 data-translate="feature5-title">Maintenance Services</h4>
+                <p data-translate="feature5-desc">Preventive and corrective maintenance with optimal performance assurance and emergency repairs.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="icon">
+                  <i class="bi bi-clipboard-check"></i>
+                </div>
+                <h4 data-translate="feature6-title">Testing & Commissioning</h4>
+                <p data-translate="feature6-desc">Initial system operation, performance testing, efficiency verification and complete documentation.</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="about-content">
-              <h2>We Help Businesses Reach Their Full Potential</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <div class="cta-button">
+            <a href="#contact" class="btn btn-primary" data-translate="request-services">Request Our Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-              <div class="row features-row">
-                <div class="col-md-6">
-                  <div class="feature-item">
-                    <div class="icon">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <h4>Business Growth</h4>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                  </div>
-                </div>
+  </div>
 
-                <div class="col-md-6">
-                  <div class="feature-item">
-                    <div class="icon">
-                      <i class="bi bi-lightbulb"></i>
-                    </div>
-                    <h4>Innovative Solutions</h4>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                  </div>
-                </div>
+</section><!-- /About Section -->
 
-                <div class="col-md-6">
-                  <div class="feature-item">
-                    <div class="icon">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <h4>Expert Team</h4>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                  </div>
-                </div>
+<!-- Work Process Section -->
+<section id="work-process" class="work-process section">
 
-                <div class="col-md-6">
-                  <div class="feature-item">
-                    <div class="icon">
-                      <i class="bi bi-trophy"></i>
-                    </div>
-                    <h4>Proven Results</h4>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                  </div>
-                </div>
-              </div>
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 data-translate="work-process-title">Our MEP Project Process</h2>
+    <div><span data-translate="work-process-subtitle1">Our Structured</span> <span class="description-title" data-translate="work-process-subtitle2">MEP Workflow</span></div>
+  </div><!-- End Section Title -->
 
-              <div class="cta-button">
-                <a href="#about" class="btn btn-primary">Learn More About Us</a>
-              </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="steps-content">
+          <h2 data-translate="work-process-approach-title">Our Systematic MEP Approach</h2>
+          <p class="lead" data-translate="work-process-approach-lead">We follow a structured methodology to ensure precision and quality in every MEP project.</p>
+          <p data-translate="work-process-approach-desc">Our proven process ensures seamless integration of mechanical, electrical, and plumbing systems while maintaining the highest standards of efficiency and safety.</p>
+
+          <div class="steps-cta">
+            <a href="#contact" class="btn btn-primary" data-translate="start-project-btn">Start Your MEP Project</a>
+            <a href="#services" class="btn btn-outline" data-translate="our-services-btn">Our Services</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="300">
+        <div class="steps-list">
+          <div class="step-item">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3 data-translate="step1-title">Consultation & Requirements Analysis</h3>
+              <p data-translate="step1-desc">Initial client meetings to understand project requirements, scope, and technical specifications.</p>
             </div>
           </div>
+
+          <div class="step-item">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3 data-translate="step2-title">Design & Engineering</h3>
+              <p data-translate="step2-desc">Developing detailed MEP designs, CAD drawings, and BIM models with clash detection.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3 data-translate="step3-title">Approval & Planning</h3>
+              <p data-translate="step3-desc">Securing necessary approvals and creating detailed implementation plans and schedules.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3 data-translate="step4-title">Installation & Implementation</h3>
+              <p data-translate="step4-desc">Professional installation of all MEP systems with quality control and technical supervision.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">05</div>
+            <div class="step-content">
+              <h3 data-translate="step5-title">Testing & Commissioning</h3>
+              <p data-translate="step5-desc">Comprehensive system testing, performance verification, and final commissioning.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">06</div>
+            <div class="step-content">
+              <h3 data-translate="step6-title">Maintenance & Support</h3>
+              <p data-translate="step6-desc">Ongoing maintenance services, performance monitoring, and technical support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Work Process Section -->
+
+
+
+<!-- Features Section -->
+<section id="features" class="features section lang-section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <span class="description-title" data-translate="features-advantages">Our Advantages</span>
+    <h2 data-translate="features-specializations">MEP Specializations</h2>
+    <p data-translate="features-description">Comprehensive mechanical, electrical, and plumbing solutions for all project types</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="tabs-wrapper">
+      <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+
+        <li class="nav-item">
+          <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+            <div class="tab-icon">
+              <i class="bi bi-gear-fill"></i>
+            </div>
+            <div class="tab-content">
+              <h5 data-translate="tab1-title">Mechanical Systems</h5>
+              <span data-translate="tab1-subtitle">HVAC & Ventilation</span>
+            </div>
+          </a>
+        </li><!-- End tab nav item -->
+
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+            <div class="tab-icon">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+            <div class="tab-content">
+              <h5 data-translate="tab2-title">Electrical Systems</h5>
+              <span data-translate="tab2-subtitle">Power & Distribution</span>
+            </div>
+          </a>
+        </li><!-- End tab nav item -->
+
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+            <div class="tab-icon">
+              <i class="bi bi-droplet"></i>
+            </div>
+            <div class="tab-content">
+              <h5 data-translate="tab3-title">Plumbing Systems</h5>
+              <span data-translate="tab3-subtitle">Water & Drainage</span>
+            </div>
+          </a>
+        </li><!-- End tab nav item -->
+
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+            <div class="tab-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <div class="tab-content">
+              <h5 data-translate="tab4-title">BIM Modeling</h5>
+              <span data-translate="tab4-subtitle">3D Coordination</span>
+            </div>
+          </a>
+        </li><!-- End tab nav item -->
+
+      </ul>
+
+      <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="tab-pane fade active show" id="features-tab-1">
+          <div class="row align-items-center">
+
+            <div class="col-lg-5">
+              <div class="content-wrapper">
+                <div class="icon-badge">
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+                <h3 data-translate="mechanical-title">Mechanical Systems Excellence</h3>
+                <p data-translate="mechanical-description">Complete HVAC design, installation, and maintenance services for optimal climate control and air quality in all environments.</p>
+
+                <div class="feature-grid">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="mechanical-feature1">HVAC system design and calculation</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="mechanical-feature2">Ventilation and air conditioning</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="mechanical-feature3">Heating systems and boilers</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="mechanical-feature4">Energy efficiency optimization</span>
+                  </div>
+                </div>
+
+                <div class="stats-row">
+                  <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label" data-translate="mechanical-stat1">Systems Installed</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">30%</div>
+                    <div class="stat-label" data-translate="mechanical-stat2">Energy Saving</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label" data-translate="mechanical-stat3">Support</div>
+                  </div>
+                </div>
+
+                <a href="#contact" class="btn-primary" data-translate="request-consultation">Request Consultation <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="visual-content">
+                <div class="main-image">
+                  <img src="assets/img/features/hvac-system.webp" alt="HVAC Systems" class="img-fluid">
+                  <div class="floating-card">
+                    <i class="bi bi-thermometer"></i>
+                    <div class="card-content">
+                      <span data-translate="mechanical-card-label">Efficiency</span>
+                      <strong data-translate="mechanical-card-value">+30% Improvement</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End tab content item -->
+
+        <div class="tab-pane fade" id="features-tab-2">
+          <div class="row align-items-center">
+
+            <div class="col-lg-5">
+              <div class="content-wrapper">
+                <div class="icon-badge">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+                <h3 data-translate="electrical-title">Electrical Systems Solutions</h3>
+                <p data-translate="electrical-description">Comprehensive electrical design, power distribution, and lighting solutions for residential, commercial, and industrial projects.</p>
+
+                <div class="feature-grid">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="electrical-feature1">Power distribution design</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="electrical-feature2">Lighting systems and controls</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="electrical-feature3">Emergency power systems</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="electrical-feature4">Low current systems</span>
+                  </div>
+                </div>
+
+                <div class="stats-row">
+                  <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label" data-translate="electrical-stat1">Projects Completed</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label" data-translate="electrical-stat2">Uptime</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">ISO</div>
+                    <div class="stat-label" data-translate="electrical-stat3">Certified</div>
+                  </div>
+                </div>
+
+                <a href="#contact" class="btn-primary" data-translate="request-consultation">Request Consultation <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="visual-content">
+                <div class="main-image">
+                  <img src="assets/img/features/electrical-system.webp" alt="Electrical Systems" class="img-fluid">
+                  <div class="floating-card">
+                    <i class="bi bi-lightning-fill"></i>
+                    <div class="card-content">
+                      <span data-translate="electrical-card-label">Reliability</span>
+                      <strong data-translate="electrical-card-value">99.9% Uptime</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End tab content item -->
+
+        <div class="tab-pane fade" id="features-tab-3">
+          <div class="row align-items-center">
+
+            <div class="col-lg-5">
+              <div class="content-wrapper">
+                <div class="icon-badge">
+                  <i class="bi bi-droplet"></i>
+                </div>
+                <h3 data-translate="plumbing-title">Plumbing & Drainage Systems</h3>
+                <p data-translate="plumbing-description">Complete plumbing solutions including water supply, drainage, fire fighting, and sanitary systems for all building types.</p>
+
+                <div class="feature-grid">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="plumbing-feature1">Water supply and distribution</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="plumbing-feature2">Drainage and sewage systems</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="plumbing-feature3">Fire fighting systems</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="plumbing-feature4">Water conservation solutions</span>
+                  </div>
+                </div>
+
+                <div class="stats-row">
+                  <div class="stat-item">
+                    <div class="stat-number">750+</div>
+                    <div class="stat-label" data-translate="plumbing-stat1">Systems Installed</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label" data-translate="plumbing-stat2">Water Saving</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">ASPE</div>
+                    <div class="stat-label" data-translate="plumbing-stat3">Standards</div>
+                  </div>
+                </div>
+
+                <a href="#contact" class="btn-primary" data-translate="request-consultation">Request Consultation <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="visual-content">
+                <div class="main-image">
+                  <img src="assets/img/features/plumbing-system.webp" alt="Plumbing Systems" class="img-fluid">
+                  <div class="floating-card">
+                    <i class="bi bi-droplet-half"></i>
+                    <div class="card-content">
+                      <span data-translate="plumbing-card-label">Efficiency</span>
+                      <strong data-translate="plumbing-card-value">40% Water Saving</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End tab content item -->
+
+        <div class="tab-pane fade" id="features-tab-4">
+          <div class="row align-items-center">
+
+            <div class="col-lg-5">
+              <div class="content-wrapper">
+                <div class="icon-badge">
+                  <i class="bi bi-building"></i>
+                </div>
+                <h3 data-translate="bim-title">BIM Modeling & Coordination</h3>
+                <p data-translate="bim-description">Advanced Building Information Modeling services for clash detection, coordination, and optimized MEP system integration.</p>
+
+                <div class="feature-grid">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="bim-feature1">3D MEP coordination</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="bim-feature2">Clash detection and resolution</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="bim-feature3">Shop drawing production</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-translate="bim-feature4">Construction documentation</span>
+                  </div>
+                </div>
+
+                <div class="stats-row">
+                  <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label" data-translate="bim-stat1">Clash Reduction</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label" data-translate="bim-stat2">Projects Modeled</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">20%</div>
+                    <div class="stat-label" data-translate="bim-stat3">Cost Saving</div>
+                  </div>
+                </div>
+
+                <a href="#contact" class="btn-primary" data-translate="request-consultation">Request Consultation <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="visual-content">
+                <div class="main-image">
+                  <img src="assets/img/features/bim-modeling.webp" alt="BIM Modeling" class="img-fluid">
+                  <div class="floating-card">
+                    <i class="bi bi-puzzle"></i>
+                    <div class="card-content">
+                      <span data-translate="bim-card-label">Coordination</span>
+                      <strong data-translate="bim-card-value">95% Clash Reduction</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End tab content item -->
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Features Section -->
+
+   <!-- Details Section -->
+<section id="details" class="details section lang-section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 data-translate="details-title">Our MEP Expertise</h2>
+    <div><span data-translate="details-subtitle1">Professional</span> <span class="description-title" data-translate="details-subtitle2">MEP Services</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4 align-items-center features-item">
+      <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+        <img src="img/details/mep-design.webp" class="img-fluid" alt="MEP Design Engineering">
+      </div>
+      <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+        <h3 data-translate="details1-title">Comprehensive MEP Design & Engineering</h3>
+        <p class="fst-italic" data-translate="details1-subtitle">
+          Professional engineering solutions for integrated mechanical, electrical, and plumbing systems.
+        </p>
+        <ul>
+          <li><i class="bi bi-check"></i><span data-translate="details1-item1">HVAC system design and load calculations</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details1-item2">Electrical power distribution and lighting design</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details1-item3">Plumbing and drainage system engineering</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details1-item4">Fire protection system design</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details1-item5">Energy efficiency and sustainability integration</span></li>
+        </ul>
+      </div>
+    </div><!-- Features Item -->
+
+    <div class="row gy-4 align-items-center features-item">
+      <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+        <img src="img/details/installation.webp" class="img-fluid" alt="MEP Installation">
+      </div>
+      <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+        <h3 data-translate="details2-title">Professional Installation & Implementation</h3>
+        <p class="fst-italic" data-translate="details2-subtitle">
+          Quality installation services with precision and adherence to international standards.
+        </p>
+        <p data-translate="details2-description">
+          Our skilled technicians ensure proper installation of all MEP systems with strict quality control measures. We follow detailed implementation plans and coordinate seamlessly with other construction trades to ensure project timelines are met without compromising on quality or safety standards.
+        </p>
+        <ul>
+          <li><i class="bi bi-check"></i> <span data-translate="details2-item1">Mechanical system installation (HVAC, ventilation)</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details2-item2">Electrical system implementation</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details2-item3">Plumbing and sanitary works</span></li>
+        </ul>
+      </div>
+    </div><!-- Features Item -->
+
+    <div class="row gy-4 align-items-center features-item">
+      <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+        <img src="img/details/bim-services.webp" class="img-fluid" alt="BIM Services">
+      </div>
+      <div class="col-md-7" data-aos="fade-up">
+        <h3 data-translate="details3-title">BIM Modeling & CAD Services</h3>
+        <p data-translate="details3-description">Advanced modeling and documentation services for optimal MEP coordination and clash detection.</p>
+        <ul>
+          <li><i class="bi bi-check"></i> <span data-translate="details3-item1">3D BIM modeling for MEP coordination</span></li>
+          <li><i class="bi bi-check"></i><span data-translate="details3-item2"> Clash detection and resolution services</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details3-item3">Detailed CAD drawings and documentation</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details3-item4">Shop drawing production</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details3-item5">As-built documentation</span></li>
+        </ul>
+      </div>
+    </div><!-- Features Item -->
+
+    <div class="row gy-4 align-items-center features-item">
+      <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+        <img src="img/details/maintenance.webp" class="img-fluid" alt="Maintenance Services">
+      </div>
+      <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+        <h3 data-translate="details4-title">Maintenance & Technical Support</h3>
+        <p class="fst-italic" data-translate="details4-subtitle">
+          Comprehensive maintenance programs to ensure optimal system performance and longevity.
+        </p>
+        <p data-translate="details4-description">
+          We provide ongoing maintenance services including preventive maintenance schedules, emergency repairs, and performance optimization. Our technical support team is available to address any issues and ensure your MEP systems operate at peak efficiency throughout their lifecycle.
+        </p>
+        <ul>
+          <li><i class="bi bi-check"></i> <span data-translate="details4-item1">Preventive maintenance programs</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details4-item2">24/7 emergency repair services</span></li>
+          <li><i class="bi bi-check"></i> <span data-translate="details4-item3">System performance optimization</span></li>
+        </ul>
+      </div>
+    </div><!-- Features Item -->
+
+  </div>
+
+</section><!-- /Details Section -->
+
+ <!-- Faq Section -->
+<section id="faq" class="faq section lang-section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 data-translate="faq-title">MEP Services FAQs</h2>
+    <div><span data-translate="faq-subtitle1">Frequently Asked</span> <span class="description-title" data-translate="faq-subtitle2">Questions</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 justify-content-between">
+      <div class="col-lg-8">
+
+        <div class="faq-list">
+          <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="100">
+            <h3 data-translate="faq1-question">What MEP services does Golden Path provide?</h3>
+            <div class="faq-content">
+              <p data-translate="faq1-answer">
+                We offer comprehensive Mechanical, Electrical, and Plumbing services including design, installation, maintenance, BIM modeling, energy efficiency solutions, and project management for all types of construction projects.
+              </p>
+            </div>
+            <i class="bi bi-plus faq-toggle"></i>
+          </div><!-- End FAQ Item-->
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <h3 data-translate="faq2-question">Do you provide both design and installation services?</h3>
+            <div class="faq-content">
+              <p data-translate="faq2-answer">
+                Yes, we offer complete turnkey solutions including MEP design, engineering, installation, testing, commissioning, and ongoing maintenance services.
+              </p>
+            </div>
+            <i class="bi bi-plus faq-toggle"></i>
+          </div><!-- End FAQ Item-->
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+            <h3 data-translate="faq3-question">What types of projects do you handle?</h3>
+            <div class="faq-content">
+              <p data-translate="faq3-answer">
+                We serve residential, commercial, industrial, and institutional projects including offices, hospitals, hotels, shopping malls, factories, and residential complexes.
+              </p>
+            </div>
+            <i class="bi bi-plus faq-toggle"></i>
+          </div><!-- End FAQ Item-->
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+            <h3 data-translate="faq4-question">Do you provide BIM modeling services?</h3>
+            <div class="faq-content">
+              <p data-translate="faq4-answer">
+                Yes, we offer advanced BIM modeling for MEP coordination, clash detection, 3D visualization, and construction documentation to ensure seamless integration of all systems.
+              </p>
+            </div>
+            <i class="bi bi-plus faq-toggle"></i>
+          </div><!-- End FAQ Item-->
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+            <h3 data-translate="faq5-question">What are your response times for emergency repairs?</h3>
+            <div class="faq-content">
+              <p data-translate="faq5-answer">
+                We provide 24/7 emergency support with response times within 2-4 hours for critical issues, depending on your location and service agreement.
+              </p>
+            </div>
+            <i class="bi bi-plus faq-toggle"></i>
+          </div><!-- End FAQ Item-->
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+            <h3 data-translate="faq6-question">Do you offer energy efficiency solutions?</h3>
+            <div class="faq-content">
+              <p data-translate="faq6-answer">
+                Yes, we provide energy audits, efficiency upgrades, sustainable design solutions, and can help you achieve LEED and other green building certifications.
+              </p>
+            </div>
+            <i class="bi bi-plus faq-toggle"></i>
+          </div><!-- End FAQ Item-->
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="700">
+            <h3 data-translate="faq7-question">What certifications do your technicians hold?</h3>
+            <div class="faq-content">
+              <p data-translate="faq7-answer">
+                Our team includes certified engineers, licensed electricians, HVAC technicians, and plumbers with certifications from recognized international and local authorities.
+              </p>
+            </div>
+            <i class="bi bi-plus faq-toggle"></i>
+          </div><!-- End FAQ Item-->
+
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
-
-    <!-- Work Process Section -->
-    <section id="work-process" class="work-process section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Consulting Process</h2>
-        <div><span>Check Our</span> <span class="description-title">Our Consulting Process</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="steps-content">
-              <h2>Our Proven Consulting Process</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-              <div class="steps-cta">
-                <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                <a href="#about" class="btn btn-outline">Learn More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="300">
-            <div class="steps-list">
-              <div class="step-item">
-                <div class="step-number">01</div>
-                <div class="step-content">
-                  <h3>Discovery &amp; Analysis</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-
-              <div class="step-item">
-                <div class="step-number">02</div>
-                <div class="step-content">
-                  <h3>Strategy Development</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-
-              <div class="step-item">
-                <div class="step-number">03</div>
-                <div class="step-content">
-                  <h3>Implementation</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-
-              <div class="step-item">
-                <div class="step-number">04</div>
-                <div class="step-content">
-                  <h3>Monitoring &amp; Optimization</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-
-              <div class="step-item">
-                <div class="step-number">05</div>
-                <div class="step-content">
-                  <h3>Evaluation &amp; Reporting</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-card">
+          <i class="bi bi-chat-dots-fill"></i>
+          <h3 data-translate="faq-contact-title">Need more information?</h3>
+          <p data-translate="faq-contact-description">Contact our MEP experts for personalized consultation and detailed answers to your specific project requirements and technical questions.</p>
+          <a href="#contact" class="btn btn-primary" data-translate="contact-team-btn">Contact Our Team</a>
         </div>
       </div>
-    </section><!-- /Work Process Section -->
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
+    </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <div><span>Frequently Asked</span> <span class="description-title">Questions</span></div>
-      </div><!-- End Section Title -->
+  </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+</section><!-- /Faq Section -->
 
-        <div class="row gy-4 justify-content-between">
-          <div class="col-lg-8">
-
-            <div class="faq-list">
-              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="100">
-                <h3>Vivamus suscipit tortor eget felis porttitor volutpat?</h3>
-                <div class="faq-content">
-                  <p>
-                    Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt.
-                  </p>
-                </div>
-                <i class="bi bi-plus faq-toggle"></i>
-              </div><!-- End FAQ Item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                <h3>Curabitur aliquet quam id dui posuere blandit?</h3>
-                <div class="faq-content">
-                  <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.
-                  </p>
-                </div>
-                <i class="bi bi-plus faq-toggle"></i>
-              </div><!-- End FAQ Item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                <h3>Sed porttitor lectus nibh ullamcorper sit amet?</h3>
-                <div class="faq-content">
-                  <p>
-                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum.
-                  </p>
-                </div>
-                <i class="bi bi-plus faq-toggle"></i>
-              </div><!-- End FAQ Item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                <h3>Nulla quis lorem ut libero malesuada feugiat?</h3>
-                <div class="faq-content">
-                  <p>
-                    Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel.
-                  </p>
-                </div>
-                <i class="bi bi-plus faq-toggle"></i>
-              </div><!-- End FAQ Item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                <h3>Vestibulum ac diam sit amet quam vehicula elementum?</h3>
-                <div class="faq-content">
-                  <p>
-                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                  </p>
-                </div>
-                <i class="bi bi-plus faq-toggle"></i>
-              </div><!-- End FAQ Item-->
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="faq-card">
-              <i class="bi bi-chat-dots-fill"></i>
-              <h3>Can't find answer to your question?</h3>
-              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.</p>
-              <a href="#contact" class="btn btn-primary">Contact Us</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
   </main>
 
    <footer id="footer" class="footer">

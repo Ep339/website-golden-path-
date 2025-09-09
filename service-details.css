@@ -4,31 +4,32 @@
   --nav-font: "Rubik",  sans-serif;
 }
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #065b5e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1dc8cd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff; /* خلفية أساسية بيضاء أنيقة */
+  --default-color: #2b2b2b; /* لون النص الأساسي (رمادي داكن لتباين جيد) */
+  --heading-color: #C8A045; /* الذهبي المستخدم في الشعار للعناوين */
+  --accent-color: #b18d2b; /* درجة ذهبية داكنة كـ accent */
+  --surface-color: #f9f9f6; /* خلفية فاتحة للصناديق */
+  --contrast-color: #ffffff; /* لون نص عكسي */
 }
 :root {
-  --nav-color: #000(255, 255, 255, 0.6);  /* The default color of the main navmenu links */
-  --nav-hover-color: #1dc8cd; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #1dc8cd; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: rgba(0, 0, 0, 0.7);  /* ذهبي شفاف للروابط */
+  --nav-hover-color: #C8A045; /* ذهبي عند التمرير */
+  --nav-mobile-background-color: #ffffff; /* خلفية منيو الموبايل */
+  --nav-dropdown-background-color: #ffffff; /* خلفية منيو دروبداون */
+  --nav-dropdown-color: #2b2b2b; /* لون النص في الدروبداون */
+  --nav-dropdown-hover-color: #b18d2b; /* ذهبي داكن عند الهوفر */
 }
+
 .light-background {
-  --background-color: #e9f7f8;
+  --background-color: linear-gradient(135deg, #ffffff, #f7f3e8);
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #0ea8ac;
+  --background-color: linear-gradient(135deg, #2b2b2b, #1c1c1c);
   --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #12d6db;
+  --heading-color: #C8A045;
+  --surface-color: #3a3a3a;
   --contrast-color: #ffffff;
 }
 :root {

@@ -4,31 +4,32 @@
   --nav-font: "Rubik",  sans-serif;
 }
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #065b5e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1dc8cd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff; /* خلفية أساسية بيضاء أنيقة */
+  --default-color: #2b2b2b; /* لون النص الأساسي (رمادي داكن لتباين جيد) */
+  --heading-color: #C8A045; /* الذهبي المستخدم في الشعار للعناوين */
+  --accent-color: #b18d2b; /* درجة ذهبية داكنة كـ accent */
+  --surface-color: #f9f9f6; /* خلفية فاتحة للصناديق */
+  --contrast-color: #ffffff; /* لون نص عكسي */
 }
 :root {
-  --nav-color: rgba(255, 255, 255, 0.6);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #1dc8cd; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: rgba(0, 0, 0, 0.7);  /* ذهبي شفاف للروابط */
+  --nav-hover-color: #C8A045; /* ذهبي عند التمرير */
+  --nav-mobile-background-color: #ffffff; /* خلفية منيو الموبايل */
+  --nav-dropdown-background-color: #ffffff; /* خلفية منيو دروبداون */
+  --nav-dropdown-color: #2b2b2b; /* لون النص في الدروبداون */
+  --nav-dropdown-hover-color: #b18d2b; /* ذهبي داكن عند الهوفر */
 }
+
 .light-background {
-  --background-color: #e9f7f8;
+  --background-color: linear-gradient(135deg, #ffffff, #f7f3e8);
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #0ea8ac;
+  --background-color: linear-gradient(135deg, #2b2b2b, #1c1c1c);
   --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #12d6db;
+  --heading-color: #C8A045;
+  --surface-color: #3a3a3a;
   --contrast-color: #ffffff;
 }
 :root {
@@ -84,7 +85,7 @@ p {
 .header {
   --background-color: rgba(255, 255, 255, 0);
   --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --heading-color: #000000;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 15px 0;
@@ -112,7 +113,7 @@ p {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #059ea3;
+  --background-color: #dddcdc;
 }
 
 /*--------------------------------------------------------------
@@ -122,6 +123,7 @@ p {
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
+    
   }
 
   .navmenu ul {
@@ -355,8 +357,11 @@ p {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, var(--background-color) 0%, color-mix(in srgb, var(--background-color) 90%, white 10%) 100%);
-  padding: 0;
+  background: url('img/Hero\ main\ pic.jpg') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -370,55 +375,13 @@ p {
   flex-direction: column;
   text-align: center;
   position: relative;
-  min-height: 70vh;
+  min-height: 100vh;
   padding-top: 60px;
-}
-
-.hero h2 {
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.hero p {
-  max-width: 80%;
-  animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
 }
 
 .hero .carousel-control-prev,
 .hero .carousel-control-next {
   width: 10%;
-}
-
-.hero .carousel-control-next-icon,
-.hero .carousel-control-prev-icon {
-  background: none;
-  font-size: 48px;
-  line-height: 1;
-  width: auto;
-  height: auto;
-}
-
-.hero .btn-get-started {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  animation-delay: 0.8s;
-  color: var(--default-color);
-  border: 2px solid var(--accent-color);
-}
-
-.hero .btn-get-started:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
@@ -504,8 +467,8 @@ p {
 --------------------------------------------------------------*/
 
 .about {
-  direction: rtl;  /* يجعل كل النصوص والبلوكات تبدأ من اليمين */
-  text-align: right; /* محاذاة النصوص لليمين */
+  direction: rtl;  
+  text-align: right; 
 }
 .about .about-content h2 {
   font-size: 2.5rem;
@@ -2655,7 +2618,8 @@ p {
 .call-to-action .cta-image-container .main-image {
   position: relative;
   z-index: 2;
-  max-height: 400px;
+  max-height: 1000px;
+  max-width:  650px;
   object-fit: contain;
 }
 
@@ -4538,4 +4502,61 @@ body.loaded .loader-wrapper {
     opacity: 1;
   }
 
-  
+  /* تنسيق زر الترجمة للشاشات الكبيرة */
+.desktop-language-switcher {
+  margin-left: 15px;
+}
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+}
+
+.language-text {
+  margin-right: 5px;
+  font-size: 14px;
+  font-family: var(--nav-font);
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* تنسيق زر الترجمة للشاشات الصغيرة */
+.mobile-language-switcher {
+  padding: 15px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: none;
+}
+
+.mobile-language-switcher .language-toggle {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-language-switcher .language-text {
+  margin-left: 10px;
+}
+
+/* عندما تكون القائمة مفتوحة على الهاتف */
+.navmenu.active .mobile-language-switcher {
+  display: block;
+}
+
+
+.lang-section[dir="ltr"] {
+  text-align: left;
+}
+
+.lang-section[dir="rtl"] {
+  text-align: right;
+}
+ 
